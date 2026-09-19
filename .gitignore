@@ -1,0 +1,31 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Environment Variables & Secrets
+.env
+.env.local
+
+# Qdrant Vector Store & Data Caches
+data/
+data/cache/
+data/qdrant/
+.codegraph/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Checkpoints & Notebook Cache
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# IDE & Editor Files
+.vscode/
+.idea/
+
+# FastEmbed & HuggingFace Hub Local Cache
+.cache/
+fastembed_cache/

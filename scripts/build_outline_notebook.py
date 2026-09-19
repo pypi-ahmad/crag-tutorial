@@ -107,7 +107,7 @@ prose("""## 6. Evaluator
 
 For each passage, Agnes returns `score`, `label`, and `why`. An intermediate hop can be relevant; a shared name alone is not enough. A 0.9 score is a prompted judgement, not a calibrated 90% probability. JSON extraction accepts fences, preamble, and braces inside strings, then validates finite scores in [0,1], allowed labels, and a nonempty rationale. Transport and schema failures raise instead of becoming cached zero scores.
 """)
-lesson("Inspect document judgements", "A routing decision is only as good as the evidence assessment behind it.", "Approximates the retrieval evaluator in §4.2 with an LLM rather than trained T5-large.",
+lesson("Inspect document judgements", "Routing depends on the evidence assessment.", "Approximates the retrieval evaluator in §4.2 with an LLM in place of trained T5-large.",
        "Evaluate three retrieved passages, showing each score, label and explanation.", "Malformed JSON or invalid scores stop the cell; rerun after correction, reusing successful cached judgements.",
        "Compare rationales with actual text and labels; do not assume a confident explanation is correct.", '''
 from src.crag import evaluate_documents, decide_action, refine_strips, generate_answer
@@ -118,7 +118,7 @@ prose("""## 7. Actions
 
 Let m be the maximum passage score. `m >= .7` selects Correct; `m <= .3` selects Incorrect; otherwise the route is Ambiguous. No passages also gives Incorrect. These inclusive boundaries are deliberate. Correct says that at least one passage looks strong. It does not establish that every required hop is present. Incorrect discards local evidence and abstains when web recovery is disabled. Ambiguous retains passages above the lower threshold; optional web search can supplement them. Labels explain the decision, while numeric scores control routing and filtering.
 """)
-lesson("Check routing boundaries", "Make the decision rule testable independently of stochastic model outputs.", "Implements the three-way control decision from §4.3 with tutorial thresholds.",
+lesson("Check routing boundaries", "Test the decision rule without relying on a live model response.", "Implements the three-way control decision from §4.3 with tutorial thresholds.",
        "Show the current route and deterministic boundary examples.", "Out-of-range or NaN scores and reversed thresholds must raise rather than silently route.",
        "Synthetic boundary scores are unit examples, not measured model results.", '''
 print("Observed action:", decide_action(evaluations))
@@ -196,7 +196,7 @@ For each question, **gold_title_recall@k = number of distinct annotated titles r
 
 Mean model calls measures this invocation's HTTP attempts. A warm checkpoint run should report zero; it does not mean the original experiment was free. Cache keys include corpus, model, prompt-version and evaluation settings. Legacy caches are retained but not trusted by the repaired implementation.
 """)
-lesson("Run the 50-question slice", "Measure retrieval coverage, routing and answer proxies separately.", "A tutorial evaluation rather than the paper's datasets, models or reported metrics.",
+lesson("Run the 50-question slice", "Measure retrieval coverage, routing, and answer proxies separately.", "Uses a tutorial evaluation with its own dataset, model, and metrics.",
        "Resume per-ID checkpoints, display aggregate metrics and the action contingency table.",
        "A failed ID stops the cell after bounded retries; sanitized traceback files identify it and completed IDs remain reusable.",
        "Compare mean title recall with the action table; inspect cache counts before interpreting mean calls.", '''

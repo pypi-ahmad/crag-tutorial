@@ -54,8 +54,8 @@ print(env)
 assert all(env.values()) and MODEL_NAME == "agnes-3.0-flash"
 ''')
 
-lesson("Load the exact course slice and index", "A paired comparison fails if methods see different questions or corpora.",
-       "The paper motivates correction after retrieval; this adaptation uses HotpotQA rather than the paper datasets.",
+lesson("Load the exact course slice and index", "A paired comparison needs the same questions and corpus for both methods.",
+       "The paper motivates correction after retrieval. This adaptation uses HotpotQA.",
        "Load the seed-42 slice, index it idempotently, and lock the first 50 IDs.",
        "A dataset provenance mismatch rebuilds the slice; a Qdrant lock means another kernel owns the store.",
        "Expect 200 records, 50 unique comparison IDs, and 1,992 indexed paragraphs.", '''
@@ -156,8 +156,8 @@ print("Valid manual reviews:", len(reviews))
 print("Stale or missing IDs:", stale_ids)
 ''')
 
-lesson("Summarize human answer quality", "Use semantic and evidence judgements rather than treating a string heuristic as truth.",
-       "This is an external tutorial audit of the two pipelines, not a trained evaluator or paper metric.",
+lesson("Summarize human answer quality", "Use semantic and evidence judgements alongside the string heuristic.",
+       "This is an external tutorial audit of the two pipelines. It is not a trained evaluator or paper metric.",
        "Count correctness, grounding, and pairwise preferences for all fingerprint-valid reviews.",
        "If fewer than 50 reviews validate, totals are incomplete and no overall winner should be claimed.",
        "Compare method correctness with preference counts and note ties; the sample remains descriptive.", '''
@@ -203,10 +203,10 @@ prose("""## Exercise
 Pick one `naive_better`, one `crag_better`, and one inadequate tie. For each, trace retrieval → supplied evidence → answer. Decide whether retrieval, CRAG evaluation, refinement, or generation caused the result. The next cell provides a compact scaffold from the completed human audit.
 """)
 
-lesson("Build a three-case error-analysis scaffold", "Practice causal diagnosis rather than merely counting wins.",
+lesson("Build a three-case error-analysis scaffold", "Practice causal diagnosis alongside win counts.",
        "CRAG's components create identifiable failure boundaries after shared retrieval.",
        "Select one reviewed example from each requested preference category and expose its evidence path.",
-       "A missing category is reported honestly instead of substituting an unrelated example.",
+       "A missing category is reported honestly; the notebook does not substitute an unrelated example.",
        "Use the shown action, titles, strips, and rationale to explain where the methods diverged.", '''
 for preference in ("naive_better", "crag_better", "tie_both_inadequate"):
     chosen = next((review for review in reviews if review["preference"] == preference), None)
@@ -224,7 +224,7 @@ for preference in ("naive_better", "crag_better", "tie_both_inadequate"):
 lesson("Release Qdrant before the final report", "Avoid a Windows file lock after all retrieval-dependent work is complete.",
        "Operational cleanup is outside the comparison algorithm.",
        "Close the shared embedded client; the final reporting cell uses in-memory rows only.",
-       "If another kernel owns the store, shut it down rather than deleting lock files.",
+       "If another kernel owns the store, shut it down. Do not delete lock files.",
        "The confirmation means this kernel released its client.", '''
 close_qdrant_client()
 print("Qdrant client closed.")

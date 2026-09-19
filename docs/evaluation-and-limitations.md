@@ -1,6 +1,6 @@
 # Evaluation and limitations
 
-This document explains what the repository measures, what was observed in the verified local run, and how to avoid overstating the results. It covers the tutorial implementation, not the full experimental protocol of the CRAG paper.
+This document explains what the repository measures, what the verified local run observed, and how to report those results accurately. It describes the tutorial implementation, not the full CRAG paper protocol.
 
 Read [CRAG from zero to mastery](tutorial-guide.md) for concepts and [technical reference](technical-reference.md) for interfaces and cache mechanics.
 
@@ -84,7 +84,7 @@ Evaluator actions grouped by whether any annotated title appeared in hits:
 | Yes | 30 | 4 | 0 |
 | No | 3 | 12 | 1 |
 
-The surprising cells are teaching material. `Correct` without an annotated title might be a useful non-annotated passage, a label limitation, or an evaluator error. `Incorrect` despite an annotated title might reflect a weak/partial passage, a false-negative evaluator judgement, or a threshold limitation. The counts alone cannot decide which.
+Use the surprising cells as teaching material. `Correct` without an annotated title can indicate a useful non-annotated passage, a label limitation, or an evaluator error. `Incorrect` despite an annotated title can reflect a weak or partial passage, a false-negative evaluator judgement, or a threshold limitation. The counts do not distinguish among these causes.
 
 ### Paired answer-quality review
 
@@ -105,11 +105,11 @@ The audit is **method-aware, not blinded**: the reviewer saw the question, refer
 
 The completed review and failure gallery identify patterns that readers should inspect directly in notebook outputs:
 
-- **Retrieval gaps dominated inadequate ties.** When the shared top-three hits omitted the second multi-hop fact, neither evidence-treatment path could establish a complete grounded answer.
-- **Refinement can discard a needed bridge.** The observed Plymouth Barracuda and A.P. Møller rows illustrate that simple sentence splitting or strip selection can remove a fact that full-passage naive RAG retained.
-- **Generation can abstain despite retained evidence.** The Bill Dudman and NBA rows show that a cautious generation prompt can still fail to answer from a decisive-looking strip.
-- **String matching disagrees with human judgement.** Aliases and very short reference answers such as `no` make literal substring matching especially brittle.
-- **Reference/evidence conflicts need human interpretation.** One reviewed date conflict demonstrates why a dataset reference and retrieved evidence should not be collapsed into a single automatic label without inspection.
+- Retrieval gaps dominated inadequate ties. When the shared top-three hits omitted the second multi-hop fact, neither evidence-treatment path could establish a complete grounded answer.
+- The Plymouth Barracuda and A.P. Møller rows show that sentence splitting or strip selection can discard a bridge that full-passage naive RAG retained.
+- The Bill Dudman and NBA rows show that a cautious generation prompt can abstain despite a decisive-looking strip.
+- Aliases and short reference answers such as `no` make literal substring matching brittle.
+- One reviewed date conflict shows why a dataset reference and retrieved evidence require human inspection before they become a single automatic label.
 
 These examples motivate diagnosis, not a change to the reported aggregate results. A reader should open the final comparison cell, locate the named rows, and inspect exact evidence before drawing a conclusion.
 

@@ -1,6 +1,6 @@
 # Implementation and verification status
 
-Scope: `D:\AI\Github\crag-tutorial` only. Native Windows 11; no WSL, Docker, LangChain or Agentic RAG. No commit, push, branch or publication was performed.
+Scope: `D:\AI\Github\crag-tutorial` only. Native Windows 11; no WSL, Docker, LangChain, or Agentic RAG. The project was later published at `https://github.com/pypi-ahmad/crag-tutorial` on `main`; the execution evidence below predates publication.
 
 Reference: Shi-Qi Yan, Jia-Chen Gu, Yun Zhu and Zhen-Hua Ling, [Corrective Retrieval Augmented Generation, arXiv:2401.15884](https://arxiv.org/abs/2401.15884).
 

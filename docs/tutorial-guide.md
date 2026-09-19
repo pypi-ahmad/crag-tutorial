@@ -81,7 +81,7 @@ Naive RAG is an important baseline, not a straw person. The course later compare
 
 ## 4. CRAG: correct before generating
 
-The CRAG paper introduces a corrective retrieval idea: assess retrieved documents and choose how to proceed rather than treating every retrieval result as equally trustworthy. The paper uses a trained evaluator. This tutorial uses `agnes-3.0-flash` prompts as a small, inspectable substitute.
+The CRAG paper assesses retrieved documents before choosing the next step. It uses a trained evaluator. This tutorial uses `agnes-3.0-flash` prompts as a small, inspectable substitute.
 
 The tutorial’s flow is:
 

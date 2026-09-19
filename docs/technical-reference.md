@@ -1,6 +1,6 @@
 # Technical reference
 
-This reference describes the current Windows-native CRAG tutorial implementation. It is written for maintainers and advanced learners who need exact interfaces, data flow, cache behavior, and recovery rules. It documents the repository as implemented; it does not describe a production service or a paper reproduction.
+This reference describes the current Windows-native CRAG tutorial. It is for maintainers and advanced learners who need the interfaces, data flow, cache behavior, and recovery rules. It documents the repository as implemented. It does not describe a production service or a paper reproduction.
 
 For concepts and a notebook-first learning path, read [CRAG from zero to mastery](tutorial-guide.md). For metric definitions and observed results, read [evaluation and limitations](evaluation-and-limitations.md).
 
@@ -38,7 +38,7 @@ All runtime state stays inside the repository’s ignored `data/` tree. Credenti
 | Vector store | Local `QdrantClient(path="data/qdrant")`; no Qdrant Cloud, API key, Docker, or WSL. |
 | Launcher | `run.cmd` uses `py -3 -m venv .venv`, installs requirements, registers `crag-tutorial`, then opens notebook 01. |
 
-`run.cmd` additionally guards against a free-threaded Python build, because the verified launcher path requires a regular Python 3.11+ build for native dependency wheels. It scopes its `PY_PYTHON3` selection to the command session and does not change global Python configuration. An existing unsuitable `.venv` is rejected rather than deleted.
+`run.cmd` guards against a free-threaded Python build because the verified launcher path needs a regular Python 3.11+ build for native dependency wheels. It scopes `PY_PYTHON3` to the command session and leaves global Python configuration unchanged. An unsuitable existing `.venv` is rejected and left in place.
 
 ### Exported package surface
 

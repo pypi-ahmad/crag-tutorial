@@ -2,7 +2,7 @@
 
 This repository is a Windows-native, notebook-led course on **Corrective Retrieval Augmented Generation (CRAG)**. It takes a reader from the basics of retrieval-augmented generation (RAG) through a real, inspectable implementation and a controlled naive-RAG-versus-CRAG comparison.
 
-It is based on Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, and Zhen-Hua Ling, [*Corrective Retrieval Augmented Generation* (arXiv:2401.15884)](https://arxiv.org/abs/2401.15884). It is a teaching adaptation, not a reproduction of the paper or a production-ready RAG system.
+It is based on Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, and Zhen-Hua Ling, [*Corrective Retrieval Augmented Generation* (arXiv:2401.15884)](https://arxiv.org/abs/2401.15884). The course adapts the paper for teaching. It does not reproduce the paper’s experiments or provide a production RAG system.
 
 ## Start here
 
@@ -42,7 +42,7 @@ Common recovery paths:
 
 - Use `AGNESAI_API_KEY`, not `AGNES_API_KEY`.
 - For HotpotQA errors, check `HF_TOKEN`, network availability, and the exact dataset/config/split above.
-- The client retries transient failures, including HTTP 429, with bounded backoff. Exhausted retries stop with a sanitized error rather than caching a fake success.
+- The client retries transient failures, including HTTP 429, with bounded backoff. When retries are exhausted, it surfaces a sanitized error and does not cache a success.
 - JSON fences are tolerated; invalid evaluator or strip schemas raise and are not stored as successful output.
 - For a Qdrant lock, shut down the other kernel that owns `data/qdrant`. Do not delete a live database to clear a lock.
 

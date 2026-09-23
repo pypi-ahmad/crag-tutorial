@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:824a427eb70af1e14bf6769724ad9f33b5a840d883b5f2101afe558defe39c32",
+  "claims": [
+    {
+      "id": "claim_3430adc5c2914965a640f24882613be5",
+      "statement": "Repository runtime data is rooted under `data/`; configuration places reusable cache files under `data/cache` and the embedded Qdrant store under `data/qdrant`.",
+      "evidence": [
+        {
+          "resource": "repo://src/config.py#L5-L8",
+          "version": "repo-lines-v1:sha256:2befe623b3607ebf19a4a2da7f4af788fe9a05a144d1cb3e1bb82d274eaf8939:eyJzZWxlY3RlZExpbmVDb3VudCI6NCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMDQ4YzhhMDdmZTA1NjcwYmYzNzg2NTMwMWE0ZGFlODBkMzg5YzUzM2JiZjA3ZDdlODQwMWFjOWFiZTQ1MzIyOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTNhMWYxODk3NmQzOTM0OTc4MjdkZjMyOTlkMjBiY2I5NmMyZTQwNTVhOTFmNDYyNTAxYWFhMjA1ZjY1NDJmMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNzQ2MTZlNmMyNmYxZDczNDU2NzljZDVjMjQxOWIzYThkZWE3YWJjYWRmNmVhZWQxODVlYzc3MWUyOTAyODE5ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZGQwMTJlZjM0YjUzNGY0ZDAyM2MwNjZjMDAwM2JlOGNjZGE4YmJjYTY4MDFjZDY5ZTVhYjU1MDhkMTY4ZTk1MiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_9e0f9ae09e034932a5381bad6191524f",
+      "statement": "The dataset preparation stage loads HotpotQA `distractor` validation data, creates a seeded slice with a fingerprinted manifest, and derives smoke IDs from the selected slice.",
+      "evidence": [
+        {
+          "resource": "repo://src/data_hotpot.py#L10-L48",
+          "version": "repo-lines-v1:sha256:b3150ba2cf41b8c30216ce4d5f2178def1d2910bc371b0951a02f21baaf69265:eyJzZWxlY3RlZExpbmVDb3VudCI6MzksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZkMDRlNjI5ODkxMjllN2JmOGY2OGJlOTczNDkwZjdmMWNjOWE4YWY3YTVmNGVkOTA2MjM2MDBjOGJmODNiYTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNkMzg5ZjhjNWY5ODlhZDdhZGJjMzJmZGE2MTM4NzhjOWM1YjE0YjkwMTg4M2Q4MjEyNDA4YzgwZmYwZDRjNTEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA3M2RhMTU2NjhjODY1M2MxZGE5YzI2MTIzYWQzZGEyYjk1Nzc1YWIxNmVhY2M2YmYwMTZlZDUxM2Y4NTNkYzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlYWU1MjNiNzFmZjZlNTY1ZDQ3YTE3NDNlNmUzNGZiNjdlNzM2MzJhOGM0ZGM1YzUxYjFhOWNlMTYwN2M2ZjcifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L142-L171",
+          "version": "repo-lines-v1:sha256:e7873d1db8bf66d7561aa39a8bd89cd4d419092de0b37c2f01f20cfcba868403:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlNTNlZTRiZDk2MmEzOTY4ZGU0NjFjMTNiNjRjNDE2ZjkxZDFlYjBiNzBkMjVlNGQxZDhmMTU0ZjMyNTEyZDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhOWMxNDk2YjRhMTY5ZjQzNGIyYjViOTM2NjlmODdhYjU1NjU3N2I1ZTAwYjlkMzA3NGJlNmMzMzg3ZGQwYTIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlNTA3YmQ2MTIzMGZhYTVhMjk5NTZiMGUwZDU0ZmFlOTIyYmU1ZTIxMDc1MDdkZGZiZWYzMDkwZWQ3NDEyMGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjkzMzYxMDVkY2E0NzQ4NzMxN2ExNTU2ZWMzYmE1ZDMyMWVjNTQyM2RmOWI3ZTE3NjVmYTBkZDI1MzQzMTBmNTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e582a849d88d493fa6900e2d86cbf6ef",
+      "statement": "The index/retrieval boundary uses a local TF-IDF plus TruncatedSVD encoder with embedded Qdrant; search can filter candidates to a question ID or search the full indexed collection.",
+      "evidence": [
+        {
+          "resource": "repo://src/qdrant_store.py#L129-L232",
+          "version": "repo-lines-v1:sha256:ab1c11c6c0b8fc08c10dea392b7004bed922bee7a678445d6e30dcbede287ca9:eyJzZWxlY3RlZExpbmVDb3VudCI6MTA0LCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiI5YjFiNmE5NDAzYzgzYjkxYjhjNmE5ZjIzZjdhYWYyM2RkZjlmNWIzZDBlNjcyNzEzMzEyNzEyMjA2OWQ1NDIwIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkMDgwN2M1MDg4YTBlYjVjYzhmYjdjMDYzOWVkZTQ3M2M3MzQ0YjYzZmYwZmJkMDNjYTE0MWFiMjg4MTk1ZGJlIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI0MWE3YTQxZDU1ZThkNGJiMzUyZDEyZmFhNGUzMzlmNTlmMDcwNzc3ZjljYjU3MmEyZjU2MjVlNTgyMDQ1ZDI5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        },
+        {
+          "resource": "repo://src/qdrant_store.py#L28-L65",
+          "version": "repo-lines-v1:sha256:a69f0a297d3a1a4537751749315ca9c67bb050e7606296acdacba047c57f705c:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjIxYTgzNzk1ZGU2MWRkYjEwMGYzYmVlMTk3N2JhNzY0M2U2YjVhNWE4M2E0Y2I0ZGI4MzEwOTMxMmM4ODgxYzgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI2ZTExOGJlY2M3YmM1NzBjNDA3YTJiYmFmMGQxZTRjYmUyODAzZjhkODY0OWIwZDgzOWIwZmRiZWFjYzc1ZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzZTdlYzEwNTJhOWJiZmM3MGJjYzc3YTY2NGZlNGUxMjQyNjc2NjgyY2M2ODY1OTAyNTYwZTA2NGU3YTZhNTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjhjYzIyN2M0ZGM5YTA3MjY5YTc0Y2I5YTA0MjgwOTMzYjBkODg0ZWQ3ODBlZDI0YzJjYzgxMWRjOGQ3N2Q0MTEifQ"
+        },
+        {
+          "resource": "repo://src/retrieve.py#L37-L109",
+          "version": "repo-lines-v1:sha256:4e61117ce91a518e4b2a15ca747210f58446b3d778c171a0bc4a1a80ac82ce64:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxYmMwOWZkNjZhYWY5MzQ0ZGZlZWYwZDU2YTZlZjVkNmVlNGM3ZGYyODk2OWM1ZjE3MmIwYmVlY2ZkMjk4NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzZmNiM2ExM2NjNDk4Mzk5NWNiMzdlZmZjYmQ0MTI1NTk0N2ZlM2RjMDBiZDM4ZTc3MjZlYzk1NDA3NzM0NDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcwZTRmYjRkNDIzZWMzZTYwYTFkMDNkYjA4OGU1N2U4YjM1MjIxZDkxMzg0OTM2YTg4ZmQ5Mzg5NzllZDlkOTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_1cc8a47b665a4c2f8062020bae4be521",
+      "statement": "The CRAG runner orchestrates retrieval, document evaluation, score-based routing, exact-sentence refinement, optional web recovery, and grounded answer generation.",
+      "evidence": [
+        {
+          "resource": "repo://src/pipeline.py#L19-L41",
+          "version": "repo-lines-v1:sha256:1569066a12116c06a3a5ce4fdb08a1072575f744272587171cce052f7aa5c574:eyJzZWxlY3RlZExpbmVDb3VudCI6MjMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5N2ZjYzE0N2FjNDUzNjk4ODhhNWUyODUwMmJkNWY3YTBlNDc2MGFkZjhkN2RhOGIyODlkNjY2NDIyNjk4YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5ODliMTg1MjNiNmUwZTYyNzcyYWNkZDcyMTc1MWYxOGMzZWU0OTc1MTliMzQzNTgxZmRmNGNmMmI3ZDE1M2UiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExNTQ0MTBkMjkwMjM5NmIyODk1YTBlNDg4Yzk0ZmM5ZGQ1OTVhZDRlOGM3OWU2MTNjN2QwYWUzMDk4MzA5NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjliZWY2MDAzODYzZDUzOGU1ZTU3ZTY3ZWVkNjQ2NTgwYTk3YjU5OGM3OTM4ODZiMzgwNzkwMjk1NGI2MzIwMzIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7095c746dc7b4068992bd71f8f673cb5",
+      "statement": "The paired comparison retrieves once per question and sends the same hits to naive RAG and CRAG, an invariant also asserted by the offline regression test.",
+      "evidence": [
+        {
+          "resource": "repo://src/comparison.py#L89-L155",
+          "version": "repo-lines-v1:sha256:8eca1451412d98dbf29a10f94c50749594df0babe090b638099e38dbc0ed61cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhMjYyNjlmMThkZWJiMDA1MmJhMGVhOGNjNjVkOTFkOTBjZmZkZTJlNGI0YzU3YzAwZGQ4ZDkzMDQ2NDM2YWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjYjc4ZTEwZTYwNWRiMWQyNjE1MzkwMzdjYTVlNTQwZWNhYmZhZjVjNDFhZjVkNTI0MGFmMjNjZTkzNjM5ZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmYzExZGI0YzY2MWQ4ODY5MzM2MmNlZTNkZmVjNmNjYWZiZjZlZTQxMTI2ZjdhMDVjZTQ1MDg4MzhhYmI3MmQifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L90-L99",
+          "version": "repo-lines-v1:sha256:ae93082c836c97234ea562393051785adde37227db698bb9a80d8d75ee22e88b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2YzM5ZmYzYjllYTgyNGQ1MjBlZTBmNThlMzkxYWE5NWRmNzhiZjUwZGRkNDU3ODdmZTFlY2U2MGZjOGNiMWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhOTk2YTIyNzQ5YTczMDE5MDhhZGNmMGJhOTA5NzZkYTRjNTRhNzEyZmU0MGMzMDU3NDU2NGFhZTY4ZTk3MmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxYzFlZDJiOGQ0MWU1YTQ0MGMxNmU1ZTEwZjU5YmY5YmM4YWRlZWJiMzI3ZjJlNzNiNzE3NzBhMjMyY2UxZmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiZmNlNTdhYzY2OWIyZWViZDZlYTQ2YzYwZGUwMTExMDJkYTE2YzA4ZjM3ODUyYjZlOTc3N2Y4MTgwMGZiMDcifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T14:07:27.938Z"
+  }
+}

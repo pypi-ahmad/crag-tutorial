@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4fba4fa2c9e737af0b7734a42e4a08f75e06d565ff53e96e4865dc253d265bb5",
+  "claims": [
+    {
+      "id": "claim_35211258164f43c282748b1f6fbc4759",
+      "statement": "The paired comparison runs the first 50 records, performs one question-pool search per record, and supplies the same hits to naive RAG and CRAG.",
+      "evidence": [
+        {
+          "resource": "repo://src/comparison.py#L89-L155",
+          "version": "repo-lines-v1:sha256:8eca1451412d98dbf29a10f94c50749594df0babe090b638099e38dbc0ed61cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhMjYyNjlmMThkZWJiMDA1MmJhMGVhOGNjNjVkOTFkOTBjZmZkZTJlNGI0YzU3YzAwZGQ4ZDkzMDQ2NDM2YWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjYjc4ZTEwZTYwNWRiMWQyNjE1MzkwMzdjYTVlNTQwZWNhYmZhZjVjNDFhZjVkNTI0MGFmMjNjZTkzNjM5ZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmYzExZGI0YzY2MWQ4ODY5MzM2MmNlZTNkZmVjNmNjYWZiZjZlZTQxMTI2ZjdhMDVjZTQ1MDg4MzhhYmI3MmQifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L90-L99",
+          "version": "repo-lines-v1:sha256:ae93082c836c97234ea562393051785adde37227db698bb9a80d8d75ee22e88b:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ2YzM5ZmYzYjllYTgyNGQ1MjBlZTBmNThlMzkxYWE5NWRmNzhiZjUwZGRkNDU3ODdmZTFlY2U2MGZjOGNiMWUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVhOTk2YTIyNzQ5YTczMDE5MDhhZGNmMGJhOTA5NzZkYTRjNTRhNzEyZmU0MGMzMDU3NDU2NGFhZTY4ZTk3MmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImYxYzFlZDJiOGQ0MWU1YTQ0MGMxNmU1ZTEwZjU5YmY5YmM4YWRlZWJiMzI3ZjJlNzNiNzE3NzBhMjMyY2UxZmEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImNiZmNlNTdhYzY2OWIyZWViZDZlYTQ2YzYwZGUwMTExMDJkYTE2YzA4ZjM3ODUyYjZlOTc3N2Y4MTgwMGZiMDcifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7529a79cab7641bda7178c6b975b7aac",
+      "statement": "Naive RAG passes complete retrieved passage text to the grounded generator, while the CRAG arm routes the shared hits through the corrective pipeline.",
+      "evidence": [
+        {
+          "resource": "repo://src/comparison.py#L26-L36",
+          "version": "repo-lines-v1:sha256:b89471cc2b3f2481c764585ad9c4ff70b7555abd3b367e91909288055c57ff5c:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYwNGIyMTc3NGI5YjU2OWNiMTBjNDczOTBhOGY3N2Y3ZWI3OThhNWViNzljNDY0NDdmZmE1NWQxNGVjNTQzODEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4OTNmNDBlMzc4MWViODk2YzgyZDA0NmEwODA2N2ExMWUzNWNkZjJmMWRmYWYyNmZlYTkwYjhkYjY2NzY0MTMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQwMDcyMTNlYmRjZTVlMTQ5YzRmMGY3MjYwM2I0OTYxOTZhNDlmMTVkYzIxZWU4NjM5OGZlMzI5MmY5Y2I0NjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE1MDc3Njg3M2UyM2E2ZTg2OTQyZDIwNTlmZDBhYTQzNzM1ZWU0NWFkOTU5MzhmOTVhNjMyYWVhOWM0YTFiMmQifQ"
+        },
+        {
+          "resource": "repo://src/pipeline.py#L19-L42",
+          "version": "repo-lines-v1:sha256:a2938a2d0e90630629d110eae3f400e0389bf74e9209bdb72e9f999310904f2c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5N2ZjYzE0N2FjNDUzNjk4ODhhNWUyODUwMmJkNWY3YTBlNDc2MGFkZjhkN2RhOGIyODlkNjY2NDIyNjk4YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4M2ZhYjQ0YTgzYTdkZDZlNjFiYmU4NTQ5Mjc5NDYyOTVkN2MzNGNlYWJiMDE2YmUzNDczNjNlODBjMzkzZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExNTQ0MTBkMjkwMjM5NmIyODk1YTBlNDg4Yzk0ZmM5ZGQ1OTVhZDRlOGM3OWU2MTNjN2QwYWUzMDk4MzA5NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE4N2Y0MzdhMzMwYTI4MzM5NTllODc2ZWJiODA2MmQ1YzhmODM1N2Y2ZTM5ZmEyOGYyZjdmNmMxNTI3ZDc1OTgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9a6de7a8781144c1a69e0227a7e38d6c",
+      "statement": "Paired checkpoints are keyed by settings and selected records and only reused when the row ID and comparison fingerprint validate.",
+      "evidence": [
+        {
+          "resource": "repo://src/comparison.py#L89-L155",
+          "version": "repo-lines-v1:sha256:8eca1451412d98dbf29a10f94c50749594df0babe090b638099e38dbc0ed61cc:eyJzZWxlY3RlZExpbmVDb3VudCI6NjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNhMjYyNjlmMThkZWJiMDA1MmJhMGVhOGNjNjVkOTFkOTBjZmZkZTJlNGI0YzU3YzAwZGQ4ZDkzMDQ2NDM2YWIiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImFjYjc4ZTEwZTYwNWRiMWQyNjE1MzkwMzdjYTVlNTQwZWNhYmZhZjVjNDFhZjVkNTI0MGFmMjNjZTkzNjM5ZjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNmYzExZGI0YzY2MWQ4ODY5MzM2MmNlZTNkZmVjNmNjYWZiZjZlZTQxMTI2ZjdhMDVjZTQ1MDg4MzhhYmI3MmQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_9139e48740a94da3853d1555331b9302",
+      "statement": "The comparison fingerprint binds the question/reference, retrieved text, naive evidence and answer, and CRAG strips and answer; manual review validation rejects a fingerprint mismatch.",
+      "evidence": [
+        {
+          "resource": "repo://src/comparison.py#L173-L197",
+          "version": "repo-lines-v1:sha256:decbed34f4341eb45f156afeaebc7b458784e5d26e96985da04ab6cd087039a6:eyJzZWxlY3RlZExpbmVDb3VudCI6MjUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM0ZjI0OTBiMWJiZWRkZTRjM2FjYjc4OGM0MmIzNDMwYmZkZTlmMjNjYTcxNGY3ODVkMmZkODAyOTI5NzNmNWEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI3Yjg4MDhjOWE4MWY2MTA5NDEwNDkzNTg2MjI4NmRmYjc5NjZmZTAyOGFjZmYyZDc2NDY4ZjU3NjY0OWU3ZTUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmYmQwMDkzMTRiYzI3MDg0MTY3MzRhMDJhZTVmZjM5YTFlNDhhMDUwYmU5MWY0M2IyZmFhOTIwMDJjNjJiZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/comparison.py#L39-L51",
+          "version": "repo-lines-v1:sha256:73a7b4e26dec0ba5a83ed4190a0761b59df466aa51a25cc1f25b94b374a0d74f:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljY2U4ZGNmNzE3YWYwNjI0ZWEyYzM1NzdlNzA0OTJhOWMyMWU4NmEyMzVkMjg0ZDc4YzczYjU1Mzc2Y2Q3MWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRmYmQwMDkzMTRiYzI3MDg0MTY3MzRhMDJhZTVmZjM5YTFlNDhhMDUwYmU5MWY0M2IyZmFhOTIwMDJjNjJiZmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE5ZDY3MmM3ZDk4ZjBkZGVlMDE3YmUxZTE4NjU3YmE4MDYzNDZiODY1YjFiODYwYzc1YWI1MTQ4YzA0YWQwNjYifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L101-L116",
+          "version": "repo-lines-v1:sha256:49c8f5a13f5ec146a71ac2f23dc225aaefa6a6cf06496c7e1647c99b8f5a911e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYxMTRhNWJhN2IwMDAwOWE2MjQ2ZjE1Y2U4YzA0NjIxYmI3MDQyODBjZDM4MDI5YzQyYWUyMmZiNjEwN2JhZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZlNDZlZWFhZTYxZGM1YTJmM2FiMWRjMjMxOTJhYWRjNzZhZmY4YTg5N2IzYzg3Y2QzOTEzNGYyNWJhNWYxNjUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjhhNmI0YTI2NmZhMDk4Njk2NjViY2Y3OGRiNTg5YzcwMjUzODhlMjI5YjAxZWQ3ZTE3MDFiNmNlNzhjZTljMjMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjQwY2I0OGQxZDg3MjMwZjM1NDg5YTVkMGQ1Zjc0YzI4MzQ4YmJhYjJhOGI2ODhiMTE4MWEzYTU1YmY0NmNlMzgifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8653202f757d46198307147b839cf50b",
+      "statement": "The literal answer-match signal is a non-empty, case-insensitive reference substring test and is not a semantic correctness measure.",
+      "evidence": [
+        {
+          "resource": "repo://docs/evaluation-and-limitations.md#L32-L43",
+          "version": "repo-lines-v1:sha256:9841c4963ced68948bee24fb379f0ce8c811436e137cdfade27d8a296bf0ec8e:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3MWQzODA2MDgwOTUxOWUyZjE1MmFlODJiMTBkYzYwMjM4YjBkYmU1N2JmYWNhNjA4MzZlNGMxOWE2Nzg3YTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjJiNWJhMzA5YWU0ZTUzOWY1YjNmMmU4N2Y0MzBlMDhjMTMzOGUzOTgyYTZkYzhkYWVkY2ViZGFlNWU5YWIzZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjkzYjVlYTk4OTM2YjU1YzEzMzBiOTM1ZjFjMGZmMThhNzc0OWRjMTU1OTZlY2MxYWQwZjE3ZWVkNjA5ZDcyYmMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc1YjUzNjAzODcyMWRhOWUyNDNhZTM2OThmODI4MGY0MGJjYWU4OGM1MGVmZmRhNWI2OTdmOGE5NGRkN2Q1YTQifQ"
+        },
+        {
+          "resource": "repo://src/comparison.py#L156-L171",
+          "version": "repo-lines-v1:sha256:fd320720d13a806eeb3c8c2b4a1bb1a662fac37e868e7175b1ff931140c27ce6:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdmMmI0M2RkMGViODljOGU1YTcwZjdmNTcxODRhYjMzZDE5ODcyYTZmZmRhZGU1NjBlODk5ZDE0MGJjYjc4NzkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0YjJhNDRhNjYyOTk5MTY3NDYxNjZhMjY5OTA1OTJmZGZmYmY3YTNhMzAxMzQ0ZDYxNDkyMjBlMzc4YzBkMTgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImY0MTNlMTk4OTgyMmVkNzE1MmQyYmZkMjJmNjliNjc0ZTgzZmM5YTdhZTljYThkMTliOGY1NjZlMWUxZDEzMDAifQ"
+        },
+        {
+          "resource": "repo://src/pipeline.py#L47-L62",
+          "version": "repo-lines-v1:sha256:457a70f02962bb8887c77cf62695a8cf6269674da18390c078a4d2f6a73147ba:eyJzZWxlY3RlZExpbmVDb3VudCI6MTYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkxYTc4MGEyNTE2MWY0MzM4ZTU0YzVjZDJiOGJjYWU0YzEwNmMxYzRlMzdlZTM5M2JjNDEyODNlOTNkOTJkNTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImVkYWVlNjU1YTg2NmZhNjE3YmNkMGY0MTJhYjBjMjBkMTljOGE5MDM4MWJhZTg3YmFmOWQyNzk3NDIxOGM3YWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImMzNWIxMzk4NGFiYjFiYmQ0Zjk1YjZjOWM5MjM2MDk4NDZmODVlNWRjZjc4ZjA2ZDllY2UzYjQ5MjM0NjFiNzEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijg3MDVmOTJhOTA4ZWYzZjY4YzhiOGY4ZDFlMTE3OGQzYTRjZDljNDUwZGU1NGEzNjFkODVhMTUwMGU2Y2NhZWUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T14:07:27.938Z"
+  }
+}

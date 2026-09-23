@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/architecture.md": {
+      "pageVersion": "sha256:824a427eb70af1e14bf6769724ad9f33b5a840d883b5f2101afe558defe39c32",
+      "completedBy": "codex",
+      "completedRunId": "7a8ed9ae-cb74-4a3f-91af-7433cbbc2ce7",
+      "gitHead": "2dba4b54da309b65d6372220047374887a180e8d",
+      "sourceFingerprint": "sha256:a2ae166c9c9423f33555d0def49b92d009c5b7c3030a63bd2d4daca286e29deb"
+    },
+    "/openwiki/crag-pipeline.md": {
+      "pageVersion": "sha256:1459a9dc1480be326a7fdc70cf282a59cdfcfaae551b46f2f8f385ca0ac64a9a",
+      "completedBy": "codex",
+      "completedRunId": "7a8ed9ae-cb74-4a3f-91af-7433cbbc2ce7",
+      "gitHead": "2dba4b54da309b65d6372220047374887a180e8d",
+      "sourceFingerprint": "sha256:a2ae166c9c9423f33555d0def49b92d009c5b7c3030a63bd2d4daca286e29deb"
+    },
+    "/openwiki/data-and-retrieval.md": {
+      "pageVersion": "sha256:4dc1b74d2f7acd424871e400a58d6ab5c87b95dcb69724cd2b1ddf57efb7477f",
+      "completedBy": "codex",
+      "completedRunId": "7a8ed9ae-cb74-4a3f-91af-7433cbbc2ce7",
+      "gitHead": "2dba4b54da309b65d6372220047374887a180e8d",
+      "sourceFingerprint": "sha256:a2ae166c9c9423f33555d0def49b92d009c5b7c3030a63bd2d4daca286e29deb"
+    },
+    "/openwiki/evaluation-and-comparison.md": {
+      "pageVersion": "sha256:4fba4fa2c9e737af0b7734a42e4a08f75e06d565ff53e96e4865dc253d265bb5",
+      "completedBy": "codex",
+      "completedRunId": "7a8ed9ae-cb74-4a3f-91af-7433cbbc2ce7",
+      "gitHead": "2dba4b54da309b65d6372220047374887a180e8d",
+      "sourceFingerprint": "sha256:a2ae166c9c9423f33555d0def49b92d009c5b7c3030a63bd2d4daca286e29deb"
+    },
+    "/openwiki/quickstart.md": {
+      "pageVersion": "sha256:f2f83dbcf953622d618c4a2918e126fc7e98d225b5d99c11ec9e2553c3d85904",
+      "completedBy": "codex",
+      "completedRunId": "7a8ed9ae-cb74-4a3f-91af-7433cbbc2ce7",
+      "gitHead": "2dba4b54da309b65d6372220047374887a180e8d",
+      "sourceFingerprint": "sha256:a2ae166c9c9423f33555d0def49b92d009c5b7c3030a63bd2d4daca286e29deb"
+    },
+    "/openwiki/testing-and-validation.md": {
+      "pageVersion": "sha256:ebf4359faa2f3be755b072a10db53c30ab6416323e0f585797722bd676013582",
+      "completedBy": "codex",
+      "completedRunId": "7a8ed9ae-cb74-4a3f-91af-7433cbbc2ce7",
+      "gitHead": "2dba4b54da309b65d6372220047374887a180e8d",
+      "sourceFingerprint": "sha256:a2ae166c9c9423f33555d0def49b92d009c5b7c3030a63bd2d4daca286e29deb"
+    }
+  }
+}

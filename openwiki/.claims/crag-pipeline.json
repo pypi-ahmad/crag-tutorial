@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:1459a9dc1480be326a7fdc70cf282a59cdfcfaae551b46f2f8f385ca0ac64a9a",
+  "claims": [
+    {
+      "id": "claim_b7fd33af00314cfd9af7a0ef68a7afae",
+      "statement": "Evaluator outputs are checked for a finite in-range score, an allowed label, and a non-empty explanation before the judgment is cached.",
+      "evidence": [
+        {
+          "resource": "repo://src/crag.py#L26-L52",
+          "version": "repo-lines-v1:sha256:604d5aea4cba43f16d19145607e72b1f6f2528571ab15fa1e9a48044a89e6c02:eyJzZWxlY3RlZExpbmVDb3VudCI6MjcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjFiZGEzMzJiY2UxYjg4YzBhNDZhMzY0MTZhZDE5NWI2NmU1MDA1NzI4MzQ2MGU0OTU1Y2I0ZDEzN2E3ZGU0NTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjcwZTRmYjRkNDIzZWMzZTYwYTFkMDNkYjA4OGU1N2U4YjM1MjIxZDkxMzg0OTM2YTg4ZmQ5Mzg5NzllZDlkOTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE5OTE5OGZkNzZjODZkMTI3YmI5YWFiN2IyYjU4ZjcyZDE1YTI4MGE5OGViMDJkYTNkYTk1MTJlODJhNGJiYTYiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI0MTczNzRhYTFmMmQyZTE4MDliMDk2NjZjZmE2ZGI3ODhkZWJkMTY5ZThiMmI3OTE4MDkzOGRmOTJhZTg0NmIifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L37-L45",
+          "version": "repo-lines-v1:sha256:dc80a00eb9f0d45e1cc9d7b2e3e7ebe82627129afcb3333012e901d88fd97152:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWI0NDc5ZTBmYTVmMGE4ZjI2YjYxYTJhYWY0NmQ5Y2U5YWZlNTU0YzA5NTRmMTgxMDgxNGY3OTZlMWVjYzQ3MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNmQzNTBiMzNmZWY5ZDk2ZGU1MDA1ZWJjM2ViZjYxY2Q3NzI4ODVkYmZmNjNiNTMyN2E4ODJmMjgyY2IwOGZmNCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiY2RmMzkwZWE2MjI4ODVjMmI4NWFkOWZjMTYzYmQzZjdhYTY5M2UzZWY3ODdhNjUxNTcxMjU2YzQ4ZTYzMDJjYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTg4MjY4ZDBlNDkzMzNmMTM1N2IzZDdjYTRiOGMzNjQ4MWNkN2E1OTFmN2EyM2QwNWRlOGU3MmQ2MDNiMDg2OCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_5a897a17eb184b8488e463246576ed83",
+      "statement": "The route is based on the maximum score: at least the upper threshold is `Correct`, at most the lower threshold is `Incorrect`, and intermediate values are `Ambiguous`; defaults are 0.7 and 0.3.",
+      "evidence": [
+        {
+          "resource": "repo://src/config.py#L12-L13",
+          "version": "repo-lines-v1:sha256:9e859f17739d8b7872d99a97b12f65a26fd4b51d38f87d6e027ce5451e20f2a5:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMzUwNTE4ZjQxZTg1NGJjZjZjMzhiNzZjYjY3OTdlYzg1ODU2MjFiMTRlM2Q3MzRiODE4MjhjZjQ0OGFkNTVkNSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMTRlYjNlNWYxYzliMmYxOGQyOGVhYmMyMmI1ZTMwYTQ4ZGJhMDAwNDI2OTY1MWEwYjNiNDg3NTEyYjMyNWZmOSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGQwMTJlZjM0YjUzNGY0ZDAyM2MwNjZjMDAwM2JlOGNjZGE4YmJjYTY4MDFjZDY5ZTVhYjU1MDhkMTY4ZTk1MiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiODkzODg1MjFmMDBlMTlmMjUyNTM3ODgwMDE1ZmYwMWVlM2M3MmE2YzVjNWVmYWY2ZGJhYjUyMzI4NGJjMTA5ZiJ9"
+        },
+        {
+          "resource": "repo://src/crag.py#L54-L62",
+          "version": "repo-lines-v1:sha256:f79fbc1a7d06def99780b6ee4ed80fbcf336fe5c9df31031278a768de697dcdb:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYjgzMThjYjk3NWE5ZjFiYjIzNzAzNzg0YTllODY0N2M2ODM3NWY3YjNjODE4MTYxMjAwODhmYjFmY2Q3Y2FhZCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMTJiZDMyYzk5NTZkYmE0ZGMyMzBmZDYyYjUzN2Q3YzlkYTU1NjhmNTUxZjJhZjJlODJkM2FmMGQ5Njg0OWRiNSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiY2JiNzIwMjc2ZjNjYTVmNmMyZDliMmQ0YzllYmFiN2E1MjlkYjQ5MGJlOGRlZDczNDYwODUyOTgxMjYzZDQ4NCJ9"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L30-L35",
+          "version": "repo-lines-v1:sha256:3e3f8fd59f6dbdfa3e81560ec406c3be20e93d7070b3f9538ebb8dc104a9b884:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZWM3YTE0NTAwMTJkZDc4MWEzOTBlNjg0MDhmZjBkNzE3N2M0ZThjMjU1YjZhMGNmNTYzODE3ZjE0MDQ0MzIyNCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzk2ZWM2YTg3NWM1OTk0ZjllMmIyMzNhYTVkNzljZWNmZDBiNmIzNjliYjU1MGZhMjE2Njg4NTkwYzYxYmI0MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjYzMzZmNzM0YTQ5OTk2ZGEyZmE0MWI2NGNiMTNjMjkxZWY5MWFmMGM4ZjQ1OWQxZjhiMjUzODA1NTI4ZTg1YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTMxZDM3OGZlMzFmNmU2MDkyMGI3ZmE2MTg2ZDU3Mjc0NTIyNzJlZWNlYjUzYzBmYTlkZGZlODBhZjBiNjVkMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_2b8ddb23a7f8425a825621bd5e2be29b",
+      "statement": "The refiner selects source sentence IDs and returns the corresponding original sentences; invalid IDs are rejected instead of cached as generated text.",
+      "evidence": [
+        {
+          "resource": "repo://src/crag.py#L66-L89",
+          "version": "repo-lines-v1:sha256:4e1ac9f362eb648349090fdd23864c2bc3664ee415410285681f1574f3c8ff91:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhiNDhlZmQyY2MxNDE4ODQ4ZjMyYzU1YjY3OTgyYTI3N2RmMjkyMTUyZDJkNDA1NDg3YzcxYWQ0NGNjZGI1NWQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBhMjQ4NzJjOGNhNjJiMDg1NGYzNzkwOWJhMzBlYTZhOGFiNWUwNTliOGUzYjA4ZDUzOTJiOGRmNWFjYTNjZGMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImNiYjcyMDI3NmYzY2E1ZjZjMmQ5YjJkNGM5ZWJhYjdhNTI5ZGI0OTBiZThkZWQ3MzQ2MDg1Mjk4MTI2M2Q0ODQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYxYWUzNWJjYTZiYjliMWRiNDJkOTU1MmVjNGE4MzQxMTgwOWM4ZWY3ZjZlODNiZTljZjBiN2JjZDViMzU3ZGUifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L47-L52",
+          "version": "repo-lines-v1:sha256:d9377015e77184fd565799aefa4cea9d33c50366132305b23d692366b704fd24:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWYxNDIzYWIxM2UzZDY1YmFhNjYzNTQ4MjE1MzI1NTU5NDk0ZWUzMDg1M2YzYzhiNDEyYTMyOGY0NDIwMjIxZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiODJlYzk3NjM4ZTk1YmMxYTE0YzFkOGI4ODlkN2IyYzI4ZjY2NzdmMGZkMWY4ZTI1NjlhNzNiNmNkYWZjZmQ0NiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDkxZmM2ZmQ0NGU0ZTk2ZDYyOGZiYTdhNWZkYWUyMWM0M2IwNjkwYjk1NDg5YmY4YjY4NDZkOGI1ZmM5MzA4NCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmViMTM5NzU2M2FlZTdjYWVkMGVhZjcxMjdlZTc2ZDIyN2FlM2NiMmUzNTIxOGFhYWIzODJiZGIzMjhmZTMwMCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_ff5dd37a2aa14954bce1e905565154b5",
+      "statement": "The generator only receives supplied evidence strips and returns the fixed abstention without a model request when the strip list is empty.",
+      "evidence": [
+        {
+          "resource": "repo://src/crag.py#L92-L108",
+          "version": "repo-lines-v1:sha256:d9fb300da4126c2c183cf72ce9c17536a4fce0e604ad766d7f9e8418e88988ae:eyJzZWxlY3RlZExpbmVDb3VudCI6MTcsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE3NmVhMjFiOGE1ODAzZmQ1YmYwNzcwZGU5OTUyYzY0ZDI2OWFhYWI0MzljZTY5N2Q4MTYxMTVhMmIxYmNhYTEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjNmZWVlY2ZhMjEwYTE2MzYyYjk5YWE5YmZjM2M5MjkwOGFjZjhmNmQwZTgyYTVlNDFkZjFkYmQ2YmM5NDdiOTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImJhYzg5MzI3NjlkNjAwMTdlZjY5N2JiMTc1NjBjNWI5YjEwNGNmZmJiODAxNzEwZDRlNWY3ZWY2ZWM0ZDQ1NDUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L54-L60",
+          "version": "repo-lines-v1:sha256:ffdba8355141cface866163c09c95c3634b4c90fbb97e4151955d4cf6d80930b:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOGJiMmE5YTY4YWU2Mjg2OTkwNWY1YzI5NjY1YTU2Y2FiMDg0ZGJiZTVjZDIzNTA0YmE1MGQ0MzdiMDJkMzk2YSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzYzY2ZmYzcwZmU1ZWZjMTVlZjZjMThmYTE2MDNlMjBlZDBhNzIyYTQxYTdmYjJkMTkxMzJiZTNmYWEwNDlhYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWQ4YzM4YmI5NjMzZGU3YzIwZTY3ODlhZjAzODk3YTUwNWU4ODg3Mjg3MjZhMzBiZmQ1Nzc0YjM0MzhlMmFhNyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjljYjU4Yjk2ODU2ZmYyN2QzMDk5MzYzNGFmODk1YmI2MjJkNWMzNWRlMmU4MmRkNzE1ZGIzOGM5ZWM4NWIzYyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_fd5a0a9d95854fc6b8bb73dd631384d9",
+      "statement": "Web recovery is disabled by default and is attempted only when explicitly enabled for a route other than `Correct`; search failures do not create substitute evidence.",
+      "evidence": [
+        {
+          "resource": "repo://src/pipeline.py#L19-L42",
+          "version": "repo-lines-v1:sha256:a2938a2d0e90630629d110eae3f400e0389bf74e9209bdb72e9f999310904f2c:eyJzZWxlY3RlZExpbmVDb3VudCI6MjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImY5N2ZjYzE0N2FjNDUzNjk4ODhhNWUyODUwMmJkNWY3YTBlNDc2MGFkZjhkN2RhOGIyODlkNjY2NDIyNjk4YjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM4M2ZhYjQ0YTgzYTdkZDZlNjFiYmU4NTQ5Mjc5NDYyOTVkN2MzNGNlYWJiMDE2YmUzNDczNjNlODBjMzkzZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjExNTQ0MTBkMjkwMjM5NmIyODk1YTBlNDg4Yzk0ZmM5ZGQ1OTVhZDRlOGM3OWU2MTNjN2QwYWUzMDk4MzA5NzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImE4N2Y0MzdhMzMwYTI4MzM5NTllODc2ZWJiODA2MmQ1YzhmODM1N2Y2ZTM5ZmEyOGYyZjdmNmMxNTI3ZDc1OTgifQ"
+        },
+        {
+          "resource": "repo://src/search.py#L20-L31",
+          "version": "repo-lines-v1:sha256:da2c824d194e8dfb27fe31e949acf46d40e19cefb6ec8d91ddb90ae57c04f116:eyJzZWxlY3RlZExpbmVDb3VudCI6MTIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRlNWEyNzM5ZDRjOGE3Njk2OTVkZGQ4MDcyOTg2ODYxODBkNTNiOTI0YmI5MmU5YzU0Zjc4OTdhOTQzYTg0NTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhjNGE2M2U1MjA4ODE5M2JjMDM5NzJjZDE1NTExNDZiOTRiZjMwZWQ2YmNjOWU1MGQzMjIxMTFhOGIxNTA0ZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjJhOWIxNmFjOWE0MzhiYjBlZWE2ODYzMWVhNTZmNWQ1YzI1YzkzMmQ4NTk2OWIyMmJlYzU1ZTMyY2I0ZjgxMjIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoyLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjA2Y2YyOGFiYzJlN2RhMDg3MGFkZWFiY2RhMGIxYmRlZjVkM2I4OTUyZDA2OWQyYTY1MjVmZmFjZTYwYTUxNDAifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L183-L188",
+          "version": "repo-lines-v1:sha256:d84ad130d5e9a5b95745dec38b2595cc4c5e040c45de15fd8157aa64bc17716c:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWYxNDVmYjVhZGNmMWY2YWM4NzE5ZDMzMjA0YzdmMTExODE2ZTIxYTAxNThmZGJhMmJkYmU2MmZhNGMxNTViZSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzJhZTZmZjM0MzM3NWFjN2YyYWE5MWNmZjNkZGM2ZmY2NWQ5YWNkNTlkOTgzYzNlMTBjMGVkMzRmN2M5ZWIyYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMDA3ODBiMWM2MGY4ZjYwNmRmNjliM2E4YjVlYjE5M2U4ZWU0Y2VmZTk0MGJhM2EzNjU1ZDUwYTlkMGJlN2U4YiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjJiOGRjZjljMDg5ZGZjZGIwZjg0MzYyZDE5ZTgzNjAwM2Y0YzM3M2IyMmI2YWQwODZiZDMwY2M2ZjI5ZjYxYiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_8fb2cfd2e0e547fab90aac1704fe32c3",
+      "statement": "The Agnes client restricts the configured model, reads its credential from the process environment, retries selected transient API failures with bounded backoff, and counts request attempts.",
+      "evidence": [
+        {
+          "resource": "repo://src/agnes_client.py#L27-L64",
+          "version": "repo-lines-v1:sha256:fbd4cac35f424b5b78db3478540844f00f830ad2674cdd48dc96a0e42df79ccd:eyJzZWxlY3RlZExpbmVDb3VudCI6MzgsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjljMGJjOTM4YzFmNGM5Mjg0MzE3NzE4MmQwZDc5OTE1Mjg0NGU4ODU0OTdkY2JhNDUzYjY1NDU0MDU3ZDkxZDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ4NWYzNDEzNWQ1ZmYyZDQzNzQ1M2UzNzMxYjRiNWM3ZTI5NmExZTA2ZThkZjlmY2M5ZmYwYzQ4MDk5ZGZiMGYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImEwOTU5MzBmZDFmNDE3YzA3NTQzMzU0ZWE4NTEyZDVhNjI4MGEwYmI0Yzc0ODhiMDgxNGNhM2Y3YzlmYWQxMzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdjNzFiNWM0Y2I1Yjk0ZmVmMGVlMGJhMDdjNmUxMzA5YjNmZjNjNzkwMWQ0ZjU5NDExOWQ1ZWQ0MzBhYTdlNWQifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L119-L126",
+          "version": "repo-lines-v1:sha256:4215bdb7abc0b543e7760c5ae626a686c62cc0bc49c241b28bc033e644332d08:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYWY2MmIyNGU5ZjVhN2M0YTE2NmRlYzc5NzE2NTRlNjdlMDBmYWYyNjE2MjM5Yjc1YjFkNTgyNTVjMmJkZmRjMyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmQwYmZhZTI5MTI3ZmE2MTM5NjA1ZmI0YTY5ZTAyODBiZjY1M2I1Y2EzMmVhY2Q2Mzg4YTllMjQ1MDM3M2MyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMmJhZTI3YmE3ZDIzYzViZjhhYTBiOTJkYWVkZjgxN2UyZWNhNzdmMDRjOGM3YjNkYTZkOGM1MmFiYmQ0ZjJjNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZjcwM2NlM2MwYTA5Y2JlOGVkMTg3OTIzMDBiYTk4MGE3ZmE5NzM2ZWJjMmY0N2M4YmNlNTQwZWI5OTFiOTJlZiJ9"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L190-L194",
+          "version": "repo-lines-v1:sha256:030dc8ea62c51110b24eb041eca9bf2b09cb0cb1e2f3c3570079ad20e565ec35:eyJzZWxlY3RlZExpbmVDb3VudCI6NSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiYTVjNjE4YzljYjJjZDVlOTBjYmY0YzYzODJlMjQ5NTYwNjNjOGYzYzU4MmI1Njg3ZGJmYTVlYmZiYmZiOWFlOCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWVhZWVmZWI5ZDZkNzc3NDk3OTdlYmYwNzBhNjFjYjkyYzk2NWUzYzA0YjUwMTAxNzVlOWMwNjg3NTdkOGE2NyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZjg3NzhkODhlMDUxZjAyZGU0YTlmNmQ2M2Q3NGNhMjY3OWJkMzUzNGEzMmMxNGI3ZjZkYzAwZTc0YjEyYjRhNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZmU4MmZkM2E2MDQ2MzliMDUxMWVmOTFmOTdhNjY1MTBlYTNlMDFmZjFiZGNiYmY2YzM0MTJjNTRjMWViMTZiYiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T14:07:27.938Z"
+  }
+}

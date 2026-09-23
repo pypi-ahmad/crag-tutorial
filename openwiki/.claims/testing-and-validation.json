@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ebf4359faa2f3be755b072a10db53c30ab6416323e0f585797722bd676013582",
+  "claims": [
+    {
+      "id": "claim_d0f5ab878bbc4c24bf33bab324c8ab7f",
+      "statement": "The core suite uses `unittest`, redirects caches to temporary directories, and patches provider/model boundaries for offline regression checks.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_core.py#L1-L22",
+          "version": "repo-lines-v1:sha256:260b569a36b8dfe7024bb0f143cc184227f549f973d1998bbcaccfabefeef0ee:eyJzZWxlY3RlZExpbmVDb3VudCI6MjIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImEzNWM1YjI3NGZkMDhiNjJhOTgzOGI2YWY3ZDZjNWFkNzlmN2Y2ZmQxZWMzZmU0MWZiN2NjODM1N2I3YTA4NDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE3OTg4YzJkYWE0N2VmMGYxOWUxNDg5YTM1ZjgzNjNlN2FkYjQwNTg4YmIyZTg5YWNlZDBkM2E4ZjlmMzQ4MTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRmNzU3YmI2Mzg1Njc4YjE0ZmIyNDg2NzRkODQ3MzM1NjY0YWI3N2QwYWI4MDg2ZTgyY2YwZGE3ZWE4ZjY2YmEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_058cff6399344ae380b843e9118cece8",
+      "statement": "The core tests cover routing/input validation, exact strip selection, abstention, shared-hit comparison, fingerprinted reviews, retries, benchmark resume, seed reuse, and local Qdrant index recovery.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_core.py#L25-L225",
+          "version": "repo-lines-v1:sha256:82800f3417ded38179e54a4a993cd3b742924b7b81fe6d9ba62e08d08dc369a4:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAxLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJiN2Q2ZmI5OTljMjNiOTM2M2YxMDA5N2MxOGZkOTBkMzIyZmM3NTFjMmQxNGJmNWY0ZWNjN2NlNWQxN2I2MzkzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiJkZTkzZDg5MzkwNmVlYWYyY2FkY2M2NTU4NTk3YmQ5MzMwZTJlYjY5ZGZiNjBhOWM4MTc1MjE4NTI3ZTcyNjgxIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJlMjkyMzViNmQ1NTNhNmQyNDBmZDU0YWU2NWJkYWRjYWE1MjhjM2YyODY3OGQ2YWE0NTAzNDBiNmE0ZjA5OWM0IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    },
+    {
+      "id": "claim_463007458c46405ea2b8e224e999f99e",
+      "statement": "The notebook verifier's default mode checks notebook structure and syntax; its `--execute` option executes and writes notebook outputs.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_notebook.py#L1-L33",
+          "version": "repo-lines-v1:sha256:550d3f7b92f12c367e4c4958a79591d391a26e2d01606ff20ed9f26cfa034fe7:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjZhZjI2YzZjMzZhYzQxYjA2YzlmZjMzNWI1YzFlNmUxNzUwYmY1Y2FkNTc1NTk2ZjA2Njk3MTY3YTcyNWRmMTAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjI4OWI3OTFkZTc3OGM0MzE4NDJmODZmYjM5NWIxMjY4ZDJmYTk5MTI1NzZhNzljMWE3ZjgzYTAwNDExNmJjNmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_de78e7fa51ee489aa79e6a915f6ce52e",
+      "statement": "The repository audit checks local candidate files for secret patterns, dependency coverage, notebook errors, and ignore rules while reporting secret matches without values.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/audit_repository.py#L1-L50",
+          "version": "repo-lines-v1:sha256:a80d40ee6cea9b813bb9e197880290be2dfe5ea6b35fdada1994f7664e0c109c:eyJzZWxlY3RlZExpbmVDb3VudCI6NTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc5M2Q0NDYxYzE4N2UzMjVjMTg3MDMyMTcwNzViNjc4M2E1ZDMyZTYxOTg4YzY5MGI2MzQzMWE4ZGQ1OWIxYzAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImI1ODY5OTMwOWM0NzM4Nzc4OWNjMWI2Zjg4YTY5ZTNjMDY3MjQ4ZTc4ZGMzYzVjZDc2YjRlMTJjMjM4Zjg1ZGIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_15dcdb3da2294e5fae701914a45e7365",
+      "statement": "The launcher verifier creates an ignored fixture under `data/cache`, installs dependencies there, starts a local notebook server, and terminates the exact fixture process.",
+      "evidence": [
+        {
+          "resource": "repo://scripts/verify_launcher.py#L1-L64",
+          "version": "repo-lines-v1:sha256:1426b620294e3ca98897b2f3c7b1abcc33f67e9002ba26be58a4033067d59270:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY0ODhjY2YwM2EwNDQ4NzJmZTU3YzM5ZjhhNTY0NWYyMzc2NWFiMWFkMTM3MzU2NDg4YmNjM2Q0ODI1M2FhYzQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwZDM1NGFlZjMyZWZhZDc5YTFjNmUxN2M4ZDI3MjU0ZWU5OTVjMTM1NTg0NmNkMGZmZTY5MWIyY2FiMzZiMWEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T14:07:27.938Z"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:4dc1b74d2f7acd424871e400a58d6ab5c87b95dcb69724cd2b1ddf57efb7477f",
+  "claims": [
+    {
+      "id": "claim_d5d5b160b4c1412f875550786303da81",
+      "statement": "The dataset path loads the HotpotQA distractor validation split and uses a seed to select records; the slice manifest binds the dataset selection settings and a fingerprint, and smoke IDs are chosen from the resulting slice.",
+      "evidence": [
+        {
+          "resource": "repo://src/data_hotpot.py#L9-L57",
+          "version": "repo-lines-v1:sha256:e85b53aa673f54ecb99cabd27e643a36a5713ad083a744f3c333f5c3ef698568:eyJzZWxlY3RlZExpbmVDb3VudCI6NDksImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImZhYjZkNjlmYjI4ZTQ0ZDNhY2I2ZWRhYzhmN2U5ZDBlZTg2ZmU1YjI3MjNjMzQ3NTIyMzA4YzAyYjI0NzhjZTgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwNjJlNGMyOGMzZDJmOGFiYTBiMmUyMjdjODc0OTY2OTlmOTMxNTViNWU1OTAzZTIxZmRmMTdhZTZhNmJmMWUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjFjMGRmNTg4ODJkNGU4NTRhMzdhOTIwYzBkNWIzMzc4YzI2MjZmMmZjYWVlNTU1ZDQzYTM0YWRkMDA0YjQ1NTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L142-L156",
+          "version": "repo-lines-v1:sha256:0b9a7f222cfbdca1501c8dfd7c9b19bbc38760b20727d2e558e8087d21095947:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlNTNlZTRiZDk2MmEzOTY4ZGU0NjFjMTNiNjRjNDE2ZjkxZDFlYjBiNzBkMjVlNGQxZDhmMTU0ZjMyNTEyZDgiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjY3ZTJiYzA2ZTYwYWJkNzVhMjlhY2ZhNjY3ZDI3ODFlOGNkNjJlNmQyYzA4NTI1ZWU4MGQ1OTQzYTU0NDM0MmQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlNTA3YmQ2MTIzMGZhYTVhMjk5NTZiMGUwZDU0ZmFlOTIyYmU1ZTIxMDc1MDdkZGZiZWYzMDkwZWQ3NDEyMGQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjY5ZDlmZmE1MDI3MmViY2RhZDlmMGMzNTQ5NmZmZjI0MThiNDcyMTc4OGY0ZWU1ZjRhMmUzYmI5YTQzNjAxOGMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_f4242379b51044fa91d5f6e537091c1c",
+      "statement": "When supporting-fact annotations are absent, paragraph gold flags remain unknown rather than false.",
+      "evidence": [
+        {
+          "resource": "repo://src/data_hotpot.py#L32-L40",
+          "version": "repo-lines-v1:sha256:28f47e6c27779e641a5188748511627454769eb7a9b31cb39e3be63619c5fa68:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGYwODY4ZDg2MmU1OTZlMWZhMGEwYTU4NzhiMDUwZWVhZmM2ZTM0ZDBlMTYyYmUzOGM2YWYzYjFjYmFjZThmYyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiOTA1ZjE4N2Y2OTFkZDMwMjI0NjcwYTZlZWFiOTAxOTU3MjU2ZTBhOWE1NmYwOGMyODU0ZmRhNTA2OGFjN2JlYyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNWI3OWI1OWNiYjExZDgwOTUwNGI3Y2IyOGU2ZWU5YzMwMWZlYzY2NDU1NmNjOTllOTc5OTdjMGQ3ODI4YzBmYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYWMyOTdmYmRlMGNhN2I1YzAzZDdjOGM3N2I0Y2FiNDVjY2NhNTIyZTBhNWIzZjQ5YjIwYTEzYjlmZDVlMWYxYyJ9"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L148-L156",
+          "version": "repo-lines-v1:sha256:fa747bf35212b34f3f6b5d4fe5bf588704cb07478560b54078a836c67950c0d1:eyJzZWxlY3RlZExpbmVDb3VudCI6OSwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiOTRmNjdhYTBlMjMyMTllZGUyNjUyZDQ1OWEzNWU4MTQxNGQ1MzU5M2Y0YjNhYjI1YmJlM2JmYjI0NGY3YmQ2MiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNjdlMmJjMDZlNjBhYmQ3NWEyOWFjZmE2NjdkMjc4MWU4Y2Q2MmU2ZDJjMDg1MjVlZTgwZDU5NDNhNTQ0MzQyZCIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiN2RkNDBmMTQ4YmY1MWU1M2ZkZjEwOTk0MzdhMjA5NTM2ZDMzZDJjNDI5ZGFjNzBhNGRjMjBkNWIwNjMzNzBkMyIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjlkOWZmYTUwMjcyZWJjZGFkOWYwYzM1NDk2ZmZmMjQxOGI0NzIxNzg4ZjRlZTVmNGEyZTNiYjlhNDM2MDE4YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_4b06c78c72bf4cdaab683767eace377a",
+      "statement": "The index converts context paragraphs into unit-normalized 256-dimensional TF-IDF/SVD vectors and stores paragraph metadata in an embedded Qdrant collection.",
+      "evidence": [
+        {
+          "resource": "repo://src/qdrant_store.py#L163-L232",
+          "version": "repo-lines-v1:sha256:add73a9ee3c97e55ee9b2cecd28d10fb86f56001c55b88b2080902b4fa530ed4:eyJzZWxlY3RlZExpbmVDb3VudCI6NzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImM1MjY1NzkzYzlkOWFkMGI5ZWM5YTkwNmY5MmY4ZmRhOGI4NWM3OGEwYjhlYjFkNDdkY2Y4ZGYzYTNjZjQ3MGYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQwODA3YzUwODhhMGViNWNjOGZiN2MwNjM5ZWRlNDczYzczNDRiNjNmZjBmYmQwM2NhMTQxYWIyODgxOTVkYmUiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjYyODg2OTliMzliYzM3N2RmOTIzN2NkMTdmMTg0MDM3OGNjZTdiNzg3YjBlZmU1YTg0Mjk3YzJhM2IzZWNmODkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        },
+        {
+          "resource": "repo://src/qdrant_store.py#L22-L66",
+          "version": "repo-lines-v1:sha256:6ad9718dfbf207172fc5d65c7819e18e8d7187ab750aae17c1a20b3e0318419b:eyJzZWxlY3RlZExpbmVDb3VudCI6NDUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRhNWZjYjMwZGYzZDdhZDJkMDU1OWUzOGNjODliZTE2ZTM4MDdmMTI4MDJjMzA0YzBmYmUwZTk5NmM3NDI1ZGUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjkwNmYwYTM2NzhhNmI2NTVmYmRmY2MzYWZiNmI0ZDZiYTA1NmVkMmQ3NmU5YzQ0NjU1OTEyODhmODI4OTg0YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImQxMjllMDY4NTE2MzQyOGI1N2ZkMDRjMGQ1NTg0NWEzYTllNWU2NTJjZWE0YzkxOTdlMzZiYWUwYzQ1YTdjM2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImQ3ZTE5YmJmMzQ0MDE5MGJjZGEzODY5MTJlNzU4Y2UxMGVhMTM1MTBhNTM3Mzc1ZTZlZDIzMTE3NmRkNTk1NTYifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_8e2d4f92d3a24cd8b23685d6d988101c",
+      "statement": "Index reuse depends on the expected point count, vector dimension, encoder state, and corpus/index signature; the index test exercises reuse, missing-encoder recovery, corpus changes, and shrinking.",
+      "evidence": [
+        {
+          "resource": "repo://src/qdrant_store.py#L129-L161",
+          "version": "repo-lines-v1:sha256:68d42f7e389af791883136d588f9455f93d76effbaf1d7a51491e794cc855496:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjliMWI2YTk0MDNjODNiOTFiOGM2YTlmMjNmN2FhZjIzZGRmOWY1YjNkMGU2NzI3MTMzMTI3MTIyMDY5ZDU0MjAiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjBmMDg2OGQ4NjJlNTk2ZTFmYTBhMGE1ODc4YjA1MGVlYWZjNmUzNGQwZTE2MmJlMzhjNmFmM2IxY2JhY2U4ZmMiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQxYTdhNDFkNTVlOGQ0YmIzNTJkMTJmYWE0ZTMzOWY1OWYwNzA3NzdmOWNiNTcyYTJmNTYyNWU1ODIwNDVkMjkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImM0YjZhYjc4YzZlNjI5M2ZhYWE5NmY5YzAzZmRhZTA0YTEzZjQ5NjY0NjNkNGVhODRjNDk0YWFhMTkyY2QxZDUifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L196-L225",
+          "version": "repo-lines-v1:sha256:fd37fe64ad86c112168004662235b039a655ee6fbaee479d03bfa241b8516c77:eyJzZWxlY3RlZExpbmVDb3VudCI6MzAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjExZDYzYWQwZjc5MDY5NjYyN2EzYWVhYjE2OGRmNzVjZDBiNDM2YWNmYzEzYTljZGU1ZmVhZmUwOTYzOTIyNjQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImRlOTNkODkzOTA2ZWVhZjJjYWRjYzY1NTg1OTdiZDkzMzBlMmViNjlkZmI2MGE5YzgxNzUyMTg1MjdlNzI2ODEiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjMxYTJjNjZmNjcxOTc1MWMzNjEyYTk0NThjNWMwMDNmYzY2YmFhMWRhOTBmNjllODNiN2Y2YmRmZWI1NDU0ZjEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjowLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_b07d577a822b40b6b29a7d9920b5854f",
+      "statement": "Search validates the encoder/index provenance signature and optionally filters Qdrant candidates by `question_id`; without that ID it searches across the collection.",
+      "evidence": [
+        {
+          "resource": "repo://src/retrieve.py#L37-L109",
+          "version": "repo-lines-v1:sha256:4e61117ce91a518e4b2a15ca747210f58446b3d778c171a0bc4a1a80ac82ce64:eyJzZWxlY3RlZExpbmVDb3VudCI6NzMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImUxYmMwOWZkNjZhYWY5MzQ0ZGZlZWYwZDU2YTZlZjVkNmVlNGM3ZGYyODk2OWM1ZjE3MmIwYmVlY2ZkMjk4NDkiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjEzZmNiM2ExM2NjNDk4Mzk5NWNiMzdlZmZjYmQ0MTI1NTk0N2ZlM2RjMDBiZDM4ZTc3MjZlYzk1NDA3NzM0NDgiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjoxLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjcwZTRmYjRkNDIzZWMzZTYwYTFkMDNkYjA4OGU1N2U4YjM1MjIxZDkxMzg0OTM2YTg4ZmQ5Mzg5NzllZDlkOTYifQ"
+        },
+        {
+          "resource": "repo://tests/test_core.py#L204-L211",
+          "version": "repo-lines-v1:sha256:a37ac566bb5614566e49eed229125e7bb4bd7a2765ef3850be4bca6c0caeb272:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTA4NDViOTc2ZTVjNmMzOGFjOGVjNWRkMjdiMjAwMWNiZWFhNmQxMTU5NDkwMjEwY2MxYmMzN2NiYTQzMzVmNiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZDViNjA1NzBjMTNiMzI0OWZkMTQ0ZGRiOTE0OTJlNGY2ZmYyMjA0NzFkYjJkNDdmNjUzZTA0MWNkYzAwMjI2MyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNmM3NWM2YmUyNGRlZWY5ODBiMWY0ZTljZjQxODE5MTY1ZjVhNjRiZTIyZGExZjhlNmRjZGU4Mjc2N2E1NzE4ZSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYjdhMDEyNzU0MDE4MzI3MDM3OTkxMTMyZjcxZjRiOTg1NDZiYjVlNTI0YWNmMzIzYTgyNTEzNjI3YWVhN2Q2NyJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T14:07:27.938Z"
+  }
+}

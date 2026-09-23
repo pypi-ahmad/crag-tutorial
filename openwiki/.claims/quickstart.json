@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:f2f83dbcf953622d618c4a2918e126fc7e98d225b5d99c11ec9e2553c3d85904",
+  "claims": [
+    {
+      "id": "claim_0c20167409f7445fab63d2fb3901f8d0",
+      "statement": "The tutorial supports Windows 11 with a regular, non-free-threaded Python 3.11+ installation and the Windows `py` launcher.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L7-L9",
+          "version": "repo-lines-v1:sha256:67cb42c9eeb27412158d1e650fe2885f31825bcfa0fe981dec43d509a7cae265:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNzdiZjg4N2JjZWJlZGZmZDAzMmJlYTg0MzQ3YTU1NjNhZThkNGQxMmZlY2E5OTA0ODllMmFmZjYyNjNmODFkYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzQ2ZTQ5MDUyYWNlNDkzNDZmNDJjNTBlM2U0MDQzNmI0NGYzMDNmZWMxZTU0MDZiOTE5NjZkNmZkNjQ0NGZmYSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGE4YTQwNWRlZjdjZjRkZmYxM2U0MmZjYWU3YzdhZGY0NWZiOTJhOGY1ZTY5N2RkMGRhNDM2ZmRmMzUzYmIwNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYTg0NjQ1NTljMjk5YmIxNWI3MzRiNDc0MjZhMDc0Yjk2MTUwZGE4YTE4Yjc2Nzg5YzVhN2I1MDA3ODZlZGQ4ZCJ9"
+        },
+        {
+          "resource": "repo://run.cmd#L1-L26",
+          "version": "repo-lines-v1:sha256:ed47179dc233cf917bb91adf94f8c1a13c8becb080eb2c3c92c3fc3fc1017009:eyJzZWxlY3RlZExpbmVDb3VudCI6MjYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmODEyOWM4NTdiYTdiNzU4ZjAyYzljYjJjNzg2ZDU4OWFlMzU5MGEwNGU2OTI1MGM0YzM2Y2NhMWRkYTAxMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImQ4NTMwOTdjZGU1ZWY3ZGRiMjRlY2ExMGRhZDUzNjY2ZGQ2YmUwNWU3YzlmMTM4MzVkZjhiYTNkNzQwMDk1ZjAiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImZhM2ZiNTM5OTMxMGQ5M2JmNmZjZjFjNTY1N2FmZDBjYTUwNjIyYjc5YWZiZmE1ZjM4YTFjYjc5OWMxZmRmYWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3f1a9ac9ce7e46cba7eb0acd4c064484",
+      "statement": "`run.cmd` creates or checks `.venv`, installs `requirements.txt`, registers the tutorial kernel, and starts the main notebook.",
+      "evidence": [
+        {
+          "resource": "repo://run.cmd#L1-L35",
+          "version": "repo-lines-v1:sha256:779c4ab120b12262d06bdf3507d69fb334bdebfc89320d1d63d143c58bdfbe7d:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjlmODEyOWM4NTdiYTdiNzU4ZjAyYzljYjJjNzg2ZDU4OWFlMzU5MGEwNGU2OTI1MGM0YzM2Y2NhMWRkYTAxMmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRhYjJkZTkxZjJjMzQ0YWQyYzBjNWZiMTQ3MjEzYzBhOTZjYTg0MTYxZDMyOTBjMWI0ZGNjZGQxYTdhZjBkYWYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjowLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImUzYjBjNDQyOThmYzFjMTQ5YWZiZjRjODk5NmZiOTI0MjdhZTQxZTQ2NDliOTM0Y2E0OTU5OTFiNzg1MmI4NTUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc4Y2Y2ZTMxYzhkNmM0NmQyOGE1MmFmZDc3ZDg3NmU2YjU3ODRkOTViMDM0ODg0MWYwMGFjODVmNzA4MWM2OTIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_c0b20535ad594309938486b9cac3fcf9",
+      "statement": "The documented course order is quick-check notebook, main CRAG tutorial, then naive-versus-CRAG comparison; the quick check reports credential presence without printing credential values.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L11-L16",
+          "version": "repo-lines-v1:sha256:932c12e9dce9daac05a8c0f2cbc20b16bb66fc01524ce2203d2d7f0172763252:eyJzZWxlY3RlZExpbmVDb3VudCI6NiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjJmZDBmZjI2MjdmM2U0NzA3MjFlYTcwMzJiM2MzMzcxZjkwNzFiY2NhZDM0ODJiNDZlNzkyMGVlOTk4NGQ1NCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNzhiZTQ5M2Y1NDA5YjMxNjFjOGIyMDY3MGNkYmRmNmIwMGQwZTY5NDRjMDJmMjYyOWE2OWI0Y2ZiMzI5YjBkNiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWM4M2NlNTVlNGIwM2MwNmY3ZjE0OTcxMDY3ODA4NGIxZDY4YjExYjRkOTcyZGVlYmI1MTFhMzEyYWU2NDYzMiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZDZjYjdkMGQwYWZkMjcwYWVkM2E0ODZkMDA4MjliOTA5YjM4NTRiYjQ1NDY0OTQzMGVmMjUzMDU3OWI5ZTE2OSJ9"
+        },
+        {
+          "resource": "repo://notebooks/00_quick_check.ipynb#L61-L73",
+          "version": "repo-lines-v1:sha256:aa9c676483939f0d7809aa70dc0d8ba5a7cbdf799b5e9355f4880b7cc5d67bce:eyJzZWxlY3RlZExpbmVDb3VudCI6MTMsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjEzMjk0ZGU1ZGVkMWZjMjQ3NjkwOWE5MDI0Zjk2M2RjNWM5MDg1YjUxMzYyMjgwOTVhYzIzZDMxNDc4MjlmOWMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImIwMmY0NTdiOTAyMDI5NWIwOGRlYmZjNjE0ZjBmMWJlMWU2MjhjNGY0ODkxNzllYWMzOTQ5NDhkMzg3ZTIzZDQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjI0YjMyOTVkMmQzNTgxODZjOGNjMDYyZTA4ZGQ1MDdhY2EyMjY5MzQwOTczYmY3NWEzZDgxYTM1MDFjNjAwZTEiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImEwZDk1NTQxYjY2NjYyNTU2NzE0Mzk1NzgxZTA0MjI5Njk1OWYzMWNlOWQ5Nzk2YzkwZDdkMWNjMmVmYTE2ZDQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_207be157e6ae49be9bd1d05cb42974fe",
+      "statement": "The configured model and endpoint are fixed in source, and environment checking returns Boolean presence flags for the Agnes and Hugging Face credentials.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L18-L19",
+          "version": "repo-lines-v1:sha256:8f28933dcdcade787b990e25d19da0dc2a5c3d146212b42ea9e4cd092a44d9e5:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjBmYmU1ODM3MTRjMjRhOWRkZTgxMmU0NjMwNGYzMjQ4YTVmNTM4ZjUwZjc0YmU2ZDY0MDgzYTU2NTczYjhjMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZWIwMzRhMzdjNWNhYTQyYjUyNTA1MTlkZTEwOWM5ZmJkYWQ4YzhmOWM2NTdmMWRlZDkyY2I2Y2E2ZjNmZjQyYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjI3ZmE1YTdjNjU1ZWUwOTdjOTExMmFmNjYxMWVhOWQ0OTJjOTU3NTg0MmE1M2ZlMjdmMDQyMTUyZmQwNDg3MiJ9"
+        },
+        {
+          "resource": "repo://src/config.py#L10-L17",
+          "version": "repo-lines-v1:sha256:5ed616caa5c9a51946053ba45d74eda88dce52513dc0eee3973515af3ff04b9b:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGQ4OTAyYzBlOTBlOTg2YmVmYmJjYTE3MDM1MTY3NWQwMDNjZDI1ZmIzMjFkYTRiZGNhNjgxMWM1NmRiZmVhMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYzFiMDA0YWNiZDgwMWJlMDgxNWU5NTcyYTkwMDBjNDFiOTE2ZGRkY2Y1ZDMyMjk1Y2E3MTc3ZDYwYTY2YTQxNSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZGVmYmE4ZmM2NTNiNGYxODRjYmI2MDZiYzBjNDk2YWQ4MThlZDcyMzY2YWEyMDQ3ZDkzNDVjMDk0NzBjMGFlYSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjAsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiZTNiMGM0NDI5OGZjMWMxNDlhZmJmNGM4OTk2ZmI5MjQyN2FlNDFlNDY0OWI5MzRjYTQ5NTk5MWI3ODUyYjg1NSJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_eefbb469e8ed49ed80679913c06cdeb6",
+      "statement": "The first live notebook run needs network access and may make provider-metered model requests; two kernels must not own the same embedded Qdrant path concurrently.",
+      "evidence": [
+        {
+          "resource": "repo://README.md#L11-L21",
+          "version": "repo-lines-v1:sha256:48ec62beffc0d9d6d6400ae6f19c9ec9ac5544d3865956860fa103cada6358ac:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImYyZmQwZmYyNjI3ZjNlNDcwNzIxZWE3MDMyYjNjMzM3MWY5MDcxYmNjYWQzNDgyYjQ2ZTc5MjBlZTk5ODRkNTQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxYmE0NzE5YzgwYjZmZTkxMWIwOTFhN2MwNTEyNGI2NGVlZWNlOTY0ZTA5YzA1OGVmOGY5ODA1ZGFjYTU0NmIiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImVjODNjZTU1ZTRiMDNjMDZmN2YxNDk3MTA2NzgwODRiMWQ2OGIxMWI0ZDk3MmRlZWJiNTExYTMxMmFlNjQ2MzIiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImRiNTJkMDQ5YzAyZjZiNjI0NWY5ZDdlZDhkNjE1ZDhkOWFlYWE3NjU5MTU0MDVlNzAyNTZjNWRlMjFmOTE0OGMifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.2",
+    "at": "2026-09-23T14:07:27.938Z"
+  }
+}
